@@ -28,8 +28,8 @@ void loop() {
 	// collect data every 10 seconds
 	delay(10000);
 	_print("temp: %d C (%d F)\nhumid: %d%%\n\n",	// print formatting string
-		(int)device.readtemp(),						// print temperature in Celsius
-		CTOFAHR((int)device.readtemp()), 			// print temperature in Farenheit
-		(int)(device.readhumid()*100)				// print humidity in percentage
+		(int)device.readtemp(),			// print temperature in Celsius
+		CTOFAHR((int)device.readtemp()), 	// print temperature in Farenheit
+		(int)(device.readhumid()*100)		// print humidity in percentage
 	);
 }
